@@ -1,6 +1,10 @@
 # Can we capture invalid SRI events with JavaScript!?
 
-Question is also posed on SO: ["Is it possible to log client-side sub-resource integrity errors 
+I have also posed this question to the fine folks on StackOverflow: ["Is it possible to log 
+client-side 
+sub-resource 
+integrity 
+errors 
 with javascript?"](https://stackoverflow.com/questions/69320904/is-it-possible-to-log-client-side-sub-resource-integrity-errors-with-javascript)
 
 We're trying to log SRI errors to [Sentry](https://sentry.io/welcome/). In the head of this HTML 
@@ -28,10 +32,16 @@ Can we consume the console values from a headless testing framework like seleniu
 
 ## See also
 
+- [Peter Major's post on subresource-integrity](https://aldaris.github.io/dev/security/2018/03/05/subresource-integrity.html)
 - [Handling load error within subresource integrity check](https://stackoverflow.com/questions/40408636/handling-load-error-within-subresource-integrity-check#answer-54147581)
 - [cyph/sri-fallback](https://github.com/cyph/sri-fallback/blob/master/sri-fallback.js)
 
 ## Demo Page
+
+this project has a demo page setup to try out some various SRI detection methods against, it 
+requires webpack currently for me to import [Sentry's](https://sentry.io/welcome) SDK.
+
+### Usage
 
 1. Change into the `demo-page` directory
 2. Install dependencies with `yarn install`

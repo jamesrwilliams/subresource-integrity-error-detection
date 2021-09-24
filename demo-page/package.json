@@ -1,0 +1,21 @@
+{
+  "name": "sentry-sri-test",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@sentry/browser": "^6.11.0",
+    "@sentry/tracing": "^6.11.0",
+    "webpack": "^5.51.1"
+  },
+  "devDependencies": {
+    "webpack-cli": "^4.8.0",
+    "webpack-dev-server": "^4.2.1"
+  }
+}

@@ -25,10 +25,7 @@ new MutationObserver((mutations) => {
 /**
  * Attempt to use window onerror to capture errors (no luck here)
  */
-window.onerror = function (error, url, lineNumber) {
-    console.log({error, url, lineNumber})
-    return true;
-};
+
 
 /**
  * Attempt some after-page-load checks and event listeners...
@@ -52,10 +49,15 @@ window.addEventListener('DOMContentLoaded', () => {
         logError(e, 'securitypolicyviolation')
     })
 
+    window.onerror = function (error, url, lineNumber) {
+        logError({error, url, lineNumber})
+    };
+
     /**
      * Custom Error wrapper for introspection and sending to sentry
      */
     function logError(payload) {
+        console.log(`logError called`);
         console.log(payload);
         Sentry.captureException(payload);
     }

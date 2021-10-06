@@ -20,7 +20,7 @@ length and:
 
 ## Approaches
 
-### 1. Client-side
+### 1. Client-side detection
 
 Browser consoles are not directly readable and SRI errors don't seem to get captured by 
 `window.onError` style events or are they discernible using 
@@ -30,6 +30,11 @@ Browser consoles are not directly readable and SRI errors don't seem to get capt
 
 Can we consume the console values from a headless testing framework like selenium?
 
+### 3. Service
+
+Monitor sub-resources periodically verifying the hash value is still correct by comparing a new 
+hash calculation with the stored value. Trigger alerts if validated?
+
 ## See also
 
 - [Peter Major's post on subresource-integrity](https://aldaris.github.io/dev/security/2018/03/05/subresource-integrity.html)
@@ -38,11 +43,11 @@ Can we consume the console values from a headless testing framework like seleniu
 
 ## Demo Page
 
-this project has a demo page setup to try out some various SRI detection methods against, it 
+This project has a demo page setup to try out some various SRI detection methods against, it 
 requires webpack currently for me to import [Sentry's](https://sentry.io/welcome) SDK.
 
 ### Usage
 
 1. Change into the `demo-page` directory
 2. Install dependencies with `yarn install`
-3. Run `npx webpack serve`
+3. Run `npx webpack serve` or `npx webpack --watch` and open the `index.html` in your browser.

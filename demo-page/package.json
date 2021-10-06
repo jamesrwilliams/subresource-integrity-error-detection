@@ -10,7 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@sentry/browser": "^6.11.0",
+    "@sentry/browser": "^6.13.3",
     "@sentry/tracing": "^6.11.0",
     "webpack": "^5.51.1"
   },

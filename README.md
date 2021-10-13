@@ -1,9 +1,9 @@
-# Can we capture invalid SRI events with JavaScript!?
+# Capturing invalid sub-resource integrity (SRI) errors
 
-**This isn't possible as SRI errors are considered network-level issues and cannot be detected by
-client-side javascript.**
+**TL;DR - This isn't possible as SRI errors are considered network-level issues and cannot be 
+detected by client-side javascript.**
 
-When sub-resource integrity hashes are invalid, is a Javascript detection method/API we can use to 
+When <abbr title="sub-resource integrity">SRI</abbr> are invalid, is a Javascript detection method/API we can use to 
 ensure the asset has loaded and that they haven't thrown an error? I have posed this question to 
 the fine folks on StackOverflow: ["Is it possible to log client-side sub-resource integrity errors with javascript?"](https://stackoverflow.com/questions/69320904/is-it-possible-to-log-client-side-sub-resource-integrity-errors-with-javascript)
 

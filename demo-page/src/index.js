@@ -1,5 +1,7 @@
-import * as Sentry from "@sentry/browser";
-import {Integrations} from "@sentry/tracing";
+import { init } from "@sentry/browser";
+import { Integrations } from "@sentry/tracing";
+
+require('./style.css')
 
 /**
  * This sets up a MutationObserver on the document to see if we can see the SRI invalidation
@@ -32,7 +34,9 @@ new MutationObserver((mutations) => {
  */
 window.addEventListener('DOMContentLoaded', () => {
 
-    console.log('DOMContentLoaded')
+    console.log(document.styleSheets);
+
+    console.log('DOMContentLoaded');
 
     // This is our Bootstrap css - with a valid hash
     document.head
@@ -65,7 +69,7 @@ window.addEventListener('DOMContentLoaded', () => {
     /**
      * Init Sentry for logging
      */
-    Sentry.init({
+    init({
         dsn: "https://2c4e5273cd944071b028dc6eba454b61@o571602.ingest.sentry.io/5923956",
         integrations: [new Integrations.BrowserTracing()],
         tracesSampleRate: 1.0,

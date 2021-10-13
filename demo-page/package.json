@@ -4,7 +4,9 @@
   "description": "",
   "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx webpack server",
+    "build": "npx webpack"
   },
   "keywords": [],
   "author": "",
@@ -15,6 +17,7 @@
     "webpack": "^5.51.1"
   },
   "devDependencies": {
+    "html-webpack-plugin": "^5.3.2",
     "webpack-cli": "^4.8.0",
     "webpack-dev-server": "^4.2.1"
   }

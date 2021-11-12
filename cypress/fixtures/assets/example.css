@@ -1,0 +1,47 @@
+html,
+body {
+    margin: 0;
+    font-family: sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body:before {
+    content: 'MediaQuery => Small';
+    background: orangered;
+    padding: 10px;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+}
+
+.main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@media (min-width: 1120px) {
+    body:before {
+        content: 'MediaQuery => Large';
+        background: yellowgreen;
+    }
+}
+
+code {
+    color: #444444;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1 {
+    text-align: center;
+    background: #eee;
+    margin: 0;
+    padding: 20px;
+}

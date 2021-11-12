@@ -1,0 +1,12 @@
+{
+  "asset_hashes.json": {
+    "sha256": "JV0j1AQMjteEGZCPhwvzqVaLTk7b3VhGgNRYwnz5vi8=",
+    "sha384": "uX1u3TD5MulEKEiyY5qGSPjOiuVhsUBeGRhq753ZII5HGZ12BpyQ96r6OZmvm6J5",
+    "sha512": "8D3OCPH+C/TRMZ21TFxY8Q4l3P+KcZy/xrRoqbWvuvpdHWPBhNfv/flOBP1k0f2TpzzC69MhI1C+KJ4KaiJehw=="
+  },
+  "fake-hashes.json": {
+    "sha256": "hbCGAmY2roQEBwvNKfcvTe2jsbJsF92S8tyhpRW+iWc=",
+    "sha384": "MvTZx+n8sdxIDMPWvPnbTxDg6n2HzLP3xGKa6yXWA999ZedVr41VWxgGBWkOO4Yf",
+    "sha512": "+Y5A4Q+TQ6OgGh0uHmCFXAhVzwYv5yw+ARWjitKjJMLLRvQBcmwyVKJUQJloJEC5EWJuHRQtDbDaS1X2aRZzhw=="
+  }
+}

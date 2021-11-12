@@ -1,0 +1,28 @@
+{
+  "scripts": {
+    "start": "npm run cypress",
+    "cypress": "cypress open",
+    "generate-hashes": "node scripts/generate-false-hashes.js && node scripts/update-asset-hashes.js"
+  },
+  "dependencies": {
+    "cypress": "^9.0.0"
+  },
+  "name": "subresource-integrity-error-detection",
+  "description": "**TL;DR - This isn't possible as SRI errors are considered network-level issues and cannot be  detected by client-side javascript.**",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jamesrwilliams/subresource-integrity-error-detection.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jamesrwilliams/subresource-integrity-error-detection/issues"
+  },
+  "homepage": "https://github.com/jamesrwilliams/subresource-integrity-error-detection#readme"
+}

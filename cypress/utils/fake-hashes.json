@@ -1,0 +1,12 @@
+{
+  "incorrect": {
+    "sha256": "sha256-ICPH2tjzRsnrOAn1H1hOTalPs6VL1e1EFS7qE2KczIM=",
+    "sha384": "sha384-e4CStpCBnEJfrJhlgeB/IV4fi5sgQ2Nun0bpJ8xbfp+KTr09bBF2asZEnkO/lnou",
+    "sha512": "sha512-ZZ9ZuELu4kpFQX6o+ZnSttaPJrWEQxfZ22nZDIfgd7psGRRtSdN0vBEriA79ktc8ziI3lX/MZkUmTA3j7wzMtg=="
+  },
+  "invalid": {
+    "sha256": "sha256-ICPH2tjzRsnrOAn1H1hOTalPs6VL1e1EFS7qE2KczIM=",
+    "sha512": "sha512-e4CStpCBnEJfrJhlgeB/IV4fi5sgQ2Nun0bpJ8xbfp+KTr09bBF2asZEnkO/lnou",
+    "sha384": "sha384-ZZ9ZuELu4kpFQX6o+ZnSttaPJrWEQxfZ22nZDIfgd7psGRRtSdN0vBEriA79ktc8ziI3lX/MZkUmTA3j7wzMtg=="
+  }
+}
